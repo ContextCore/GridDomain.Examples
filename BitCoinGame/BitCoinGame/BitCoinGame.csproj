@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="BlockchainAPI" Version="4.0.0" />
+    <PackageReference Include="GridDomain.Node" Version="2.1.906-alfa" />
+  </ItemGroup>
+</Project>
