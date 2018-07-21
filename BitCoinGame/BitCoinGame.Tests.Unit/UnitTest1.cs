@@ -19,7 +19,7 @@ namespace BitCoinGame.Tests.Unit
     /// If player has zero funds, he loose 
     /// If player increase his funds to target amount, he won
     /// Player can not place a bid for more money that he has
-    /// Player can have nly one active bid 
+    /// Player can have only one active bid 
     
     /// </summary>
     public class BitCoinGameTests
@@ -27,6 +27,7 @@ namespace BitCoinGame.Tests.Unit
         [Fact]
         public void Given_Game_When_bid_is_placed_Then_it_amount_is_substracted_from_funds()
         {
+
         }
         
         [Fact]
@@ -65,18 +66,5 @@ namespace BitCoinGame.Tests.Unit
         {
             
         }
-        /// Player can bid on bitcoin price raise or lower with amount of money 
-        /// Amount is reduced from player funds
-        /// 
-        /// After a time player can check his bid 
-        /// 
-        /// If he won, double bid is returned to player balance 
-        /// 
-        /// If he lost, bid is not returned 
-        /// 
-        /// If player has zero funds, he lose 
-        /// If player increase his funds to target amount, he won
-        /// Player can not place a bid for more money that he has
-        /// Player can have nly one active bid 
     }
 }

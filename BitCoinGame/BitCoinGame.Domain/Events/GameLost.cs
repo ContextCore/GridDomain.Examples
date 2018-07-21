@@ -5,7 +5,7 @@ namespace BitCoinGame
 {
     public class GameLost : DomainEvent
     {
-        public GameLost(Guid id):base(id)
+        public GameLost(string id):base(id)
         {
         }
     }

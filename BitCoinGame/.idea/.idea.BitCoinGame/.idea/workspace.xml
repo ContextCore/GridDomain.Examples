@@ -2,29 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49b5d375-1c79-4a68-9796-9a43597de192" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BitCoinGame/BinaryOptionDomainConfiguration.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BitCoinGame/BitCoinUsdPriceProvider.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BitCoinGame/ConsoleUI.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BitCoinGame/Domain/BinaryOptionGame.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BitCoinGame/Domain/Commands/CreateNewGameCommand.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BitCoinGame/Domain/Commands/PlaceBidCommand.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BitCoinGame/Domain/Direction.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BitCoinGame/Domain/Events/BidLost.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BitCoinGame/Domain/Events/BidPlaced.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BitCoinGame/Domain/Events/BidWon.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BitCoinGame/Domain/Events/GameCreated.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BitCoinGame/Domain/Events/GameLost.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BitCoinGame/Domain/Events/GameWon.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BitCoinGame/Domain/Exceptions/BidAlreadyPlacedException.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BitCoinGame/Domain/Exceptions/CannotBidOnEndedGameException.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BitCoinGame/Domain/Exceptions/NoActiveBidException.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BitCoinGame/Domain/Exceptions/NotEnoughMoneyException.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BitCoinGame/IPriceProvider.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.BitCoinGame/.idea/contentModel.xml" afterPath="$PROJECT_DIR$/.idea/.idea.BitCoinGame/.idea/contentModel.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.BitCoinGame/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/.idea.BitCoinGame/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.BitCoinGame/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.BitCoinGame/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.BitCoinGame/riderModule.iml" afterPath="$PROJECT_DIR$/.idea/.idea.BitCoinGame/riderModule.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BitCoinGame.sln" afterPath="$PROJECT_DIR$/BitCoinGame.sln" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BitCoinGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BitCoinGame/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BitCoinGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BitCoinGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BitCoinGame.Tests.Unit/UnitTest1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BitCoinGame.Tests.Unit/UnitTest1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BitCoinGame.sln" beforeDir="false" afterPath="$PROJECT_DIR$/BitCoinGame.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BitCoinGame/BinaryOptionDomainConfiguration.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BitCoinGame/BitCoinGame.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BitCoinGame/BitCoinUsdPriceProvider.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BitCoinGame/ConsoleUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BitCoinGame/Domain/BinaryOptionGame.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BitCoinGame/Domain/Commands/CreateNewGameCommand.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BitCoinGame/Domain/Commands/PlaceBidCommand.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BitCoinGame/Domain/Direction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BitCoinGame/Domain/Events/BidLost.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BitCoinGame/Domain/Events/BidPlaced.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BitCoinGame/Domain/Events/BidWon.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BitCoinGame/Domain/Events/GameCreated.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BitCoinGame/Domain/Events/GameLost.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BitCoinGame/Domain/Events/GameWon.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BitCoinGame/Domain/Exceptions/BidAlreadyPlacedException.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BitCoinGame/Domain/Exceptions/CannotBidOnEndedGameException.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BitCoinGame/Domain/Exceptions/NoActiveBidException.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BitCoinGame/Domain/Exceptions/NotEnoughMoneyException.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BitCoinGame/IPriceProvider.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BitCoinGame/Program.cs" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,131 +36,161 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CreateNewGameCommand.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BitCoinGame/Domain/Commands/CreateNewGameCommand.cs">
+      <file leaf-file-name="BinaryOptionGame.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BitCoinGame.Domain/BinaryOptionGame.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="14">
+              <caret line="24" column="87" lean-forward="true" selection-start-line="24" selection-start-column="87" selection-end-line="24" selection-end-column="87" />
+              <folding>
+                <marker date="1532189104407" expanded="false" signature="6:75" ph="..." />
+                <marker date="1532189104407" expanded="true" signature="98:3936" ph="{...}" />
+                <marker date="1532189104407" expanded="true" signature="156:3934" ph="{...}" />
+                <marker date="1532189104407" expanded="true" signature="519:1218" ph="{...}" />
+                <marker date="1532189104407" expanded="true" signature="633:772" ph="{...}" />
+                <marker date="1532189104407" expanded="true" signature="1018:1208" ph="{...}" />
+                <marker date="1532189104407" expanded="true" signature="1307:2609" ph="{...}" />
+                <marker date="1532189104407" expanded="true" signature="1353:1696" ph="{...}" />
+                <marker date="1532189104407" expanded="true" signature="1732:1889" ph="{...}" />
+                <marker date="1532189104407" expanded="true" signature="2039:2194" ph="{...}" />
+                <marker date="1532189104407" expanded="true" signature="2228:2378" ph="{...}" />
+                <marker date="1532189104407" expanded="true" signature="2747:2831" ph="{...}" />
+                <marker date="1532189104407" expanded="true" signature="2927:3306" ph="{...}" />
+                <marker date="1532189104407" expanded="true" signature="3373:3927" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Direction.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BitCoinGame/Domain/Direction.cs">
+      <file leaf-file-name="BitCoinGame.Domain.csproj" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BitCoinGame.Domain/BitCoinGame.Domain.csproj">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="Program.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BitCoinGame.Console/Program.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="60">
+              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
               <folding>
-                <marker date="1516806919410" expanded="true" signature="21:88" ph="{...}" />
-                <marker date="1516806919410" expanded="true" signature="49:86" ph="{...}" />
+                <marker date="1532189581564" expanded="true" signature="44:291" ph="{...}" />
+                <marker date="1532189581564" expanded="true" signature="64:289" ph="{...}" />
+                <marker date="1532189581564" expanded="true" signature="110:283" ph="{...}" />
+                <marker date="1532189581564" expanded="true" signature="131:214" ph="/* var node = new GridDomainNode(() =&gt; ActorSystem.Create(&quot;test&quot;)); ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UnitTest1.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BitCoinGame.Tests.Unit/UnitTest1.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="29" column="12" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+              <folding>
+                <marker date="1532189765911" expanded="false" signature="6:26" ph="..." />
+                <marker date="1532189765911" expanded="true" signature="60:1994" ph="{...}" />
+                <marker date="1532189765911" expanded="true" signature="67:751" ph="/// Bitcoin game is a stake-based game when player has initial funds  ... " />
+                <marker date="1532189765911" expanded="true" signature="785:1992" ph="{...}" />
+                <marker date="1532189765911" expanded="true" signature="899:920" ph="{...}" />
+                <marker date="1532189765911" expanded="true" signature="1038:1058" ph="{...}" />
+                <marker date="1532189765911" expanded="true" signature="1168:1188" ph="{...}" />
+                <marker date="1532189765911" expanded="true" signature="1293:1313" ph="{...}" />
+                <marker date="1532189765911" expanded="true" signature="1450:1483" ph="{...}" />
+                <marker date="1532189765911" expanded="true" signature="1628:1661" ph="{...}" />
+                <marker date="1532189765911" expanded="true" signature="1786:1819" ph="{...}" />
+                <marker date="1532189765911" expanded="true" signature="1953:1986" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="GameCreated.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BitCoinGame/Domain/Events/GameCreated.cs">
+        <entry file="file://$PROJECT_DIR$/BitCoinGame.Domain/Events/GameCreated.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameLost.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BitCoinGame/Domain/Events/GameLost.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameWon.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BitCoinGame/Domain/Events/GameWon.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NoActiveBidException.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BitCoinGame/Domain/Exceptions/NoActiveBidException.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NotEnoughMoneyException.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BitCoinGame/Domain/Exceptions/NotEnoughMoneyException.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlaceBidCommand.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BitCoinGame/Domain/Commands/PlaceBidCommand.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="195">
+              <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
               <folding>
-                <marker date="1516806919996" expanded="false" signature="6:36" ph="..." />
-                <marker date="1516806919996" expanded="true" signature="59:380" ph="{...}" />
-                <marker date="1516806919996" expanded="true" signature="104:378" ph="{...}" />
-                <marker date="1516806919996" expanded="true" signature="288:372" ph="{...}" />
+                <marker date="1532184684682" expanded="false" signature="6:45" ph="..." />
+                <marker date="1532184684682" expanded="true" signature="68:340" ph="{...}" />
+                <marker date="1532184684682" expanded="true" signature="113:338" ph="{...}" />
+                <marker date="1532184684682" expanded="true" signature="269:332" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BinaryOptionGame.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/BitCoinGame/Domain/BinaryOptionGame.cs">
+      <file leaf-file-name="GameLost.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BitCoinGame.Domain/Events/GameLost.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="58" column="28" lean-forward="false" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
+            <state relative-caret-position="90">
+              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
               <folding>
-                <marker date="1516809508811" expanded="false" signature="6:75" ph="..." />
-                <marker date="1516809508811" expanded="true" signature="98:3954" ph="{...}" />
-                <marker date="1516809508811" expanded="true" signature="156:3952" ph="{...}" />
-                <marker date="1516809508811" expanded="true" signature="519:1218" ph="{...}" />
-                <marker date="1516809508811" expanded="true" signature="633:772" ph="{...}" />
-                <marker date="1516809508811" expanded="true" signature="1018:1208" ph="{...}" />
-                <marker date="1516809508811" expanded="true" signature="1305:2607" ph="{...}" />
-                <marker date="1516809508811" expanded="true" signature="1351:1694" ph="{...}" />
-                <marker date="1516809508811" expanded="true" signature="1730:1887" ph="{...}" />
-                <marker date="1516809508811" expanded="true" signature="2037:2192" ph="{...}" />
-                <marker date="1516809508811" expanded="true" signature="2226:2376" ph="{...}" />
-                <marker date="1516809508811" expanded="false" signature="2743:2830" ph="{...}" />
-                <marker date="1516809508811" expanded="false" signature="2927:3309" ph="{...}" />
-                <marker date="1516809508811" expanded="false" signature="3376:3945" ph="{...}" />
+                <marker date="1532184684726" expanded="false" signature="6:45" ph="..." />
+                <marker date="1532184684726" expanded="true" signature="68:188" ph="{...}" />
+                <marker date="1532184684726" expanded="true" signature="110:186" ph="{...}" />
+                <marker date="1532184684726" expanded="true" signature="160:180" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameWon.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BitCoinGame.Domain/Events/GameWon.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+              <folding>
+                <marker date="1532184684666" expanded="false" signature="6:45" ph="..." />
+                <marker date="1532184684666" expanded="true" signature="68:186" ph="{...}" />
+                <marker date="1532184684666" expanded="true" signature="109:184" ph="{...}" />
+                <marker date="1532184684666" expanded="true" signature="158:178" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="BinaryOptionDomainConfiguration.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BitCoinGame/BinaryOptionDomainConfiguration.cs">
+        <entry file="file://$PROJECT_DIR$/BitCoinGame.Domain/BinaryOptionDomainConfiguration.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="15" column="2" lean-forward="false" selection-start-line="15" selection-start-column="2" selection-end-line="22" selection-end-column="9" />
+            <state relative-caret-position="360">
+              <caret line="24" column="90" lean-forward="true" selection-start-line="24" selection-start-column="90" selection-end-line="24" selection-end-column="90" />
               <folding>
-                <marker date="1516808543539" expanded="false" signature="6:63" ph="..." />
-                <marker date="1516808543539" expanded="true" signature="86:882" ph="{...}" />
-                <marker date="1516808543539" expanded="true" signature="153:880" ph="{...}" />
-                <marker date="1516808543539" expanded="true" signature="221:457" ph="{...}" />
-                <marker date="1516808543539" expanded="true" signature="544:874" ph="{...}" />
-                <marker date="1516808543539" expanded="true" signature="625:864" ph="{...}" />
+                <marker date="1532189581555" expanded="true" signature="6:63" ph="..." />
+                <marker date="1532189581555" expanded="true" signature="86:888" ph="{...}" />
+                <marker date="1532189581555" expanded="true" signature="153:886" ph="{...}" />
+                <marker date="1532189581555" expanded="true" signature="221:463" ph="{...}" />
+                <marker date="1532189581555" expanded="true" signature="550:880" ph="{...}" />
+                <marker date="1532189581555" expanded="true" signature="631:870" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreateNewGameCommand.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BitCoinGame.Domain/Commands/CreateNewGameCommand.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="106" lean-forward="true" selection-start-line="16" selection-start-column="106" selection-end-line="16" selection-end-column="106" />
+              <folding>
+                <marker date="1532189581571" expanded="true" signature="6:36" ph="..." />
+                <marker date="1532189581571" expanded="true" signature="59:427" ph="{...}" />
+                <marker date="1532189581571" expanded="true" signature="127:425" ph="{...}" />
+                <marker date="1532189581571" expanded="true" signature="325:419" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlaceBidCommand.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BitCoinGame.Domain/Commands/PlaceBidCommand.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="72" lean-forward="true" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
+              <folding>
+                <marker date="1532189581546" expanded="true" signature="6:36" ph="..." />
+                <marker date="1532189581546" expanded="true" signature="59:400" ph="{...}" />
+                <marker date="1532189581546" expanded="true" signature="122:398" ph="{...}" />
+                <marker date="1532189581546" expanded="true" signature="308:392" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -167,35 +198,49 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Produce(</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Emit(</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/BitCoinGame" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/BitCoinGame/BinaryOptionDomainConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/BitCoinGame/Domain/Events/GameCreated.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/BitCoinGame/Domain/Direction.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/BitCoinGame/Domain/Events/BidPlaced.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/BitCoinGame/Domain/Exceptions/NoActiveBidException.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/BitCoinGame/Domain/Exceptions/NotEnoughMoneyException.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/BitCoinGame/Domain/Events/BidWon.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/BitCoinGame/Domain/Events/BidLost.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/BitCoinGame/Domain/Events/GameLost.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/BitCoinGame/Domain/Events/GameWon.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/BitCoinGame/Domain/Exceptions/CannotBidOnEndedGameException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BitCoinGame.Domain/BinaryOptionDomainConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BitCoinGame.Domain/BinaryOptionGame.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BitCoinGame.Console/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BitCoinGame.Tests.Unit/UnitTest1.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/BitCoinGame/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/BitCoinGame/Domain/Exceptions/BidAlreadyPlacedException.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/BitCoinGame/Domain/BinaryOptionGame.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/BitCoinGame/Domain/Commands/PlaceBidCommand.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/BitCoinGame/Domain/Commands/CreateNewGameCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BitCoinGame.Domain/Events/GameLost.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BitCoinGame.Domain/Events/GameCreated.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BitCoinGame.Domain/Events/GameWon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BitCoinGame.Domain/Events/BidLost.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BitCoinGame.Domain/Events/BidWon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BitCoinGame.Domain/Events/BidPlaced.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BitCoinGame.Domain/Commands/CreateNewGameCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BitCoinGame.Domain/Commands/PlaceBidCommand.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/BitCoinGame.Tests.Unit/UnitTest1.cs" />
-        <option value="$PROJECT_DIR$/BitCoinGame/Program.cs" />
         <option value="$PROJECT_DIR$/BitCoinGame/BinaryOptionDomainConfiguration.cs" />
         <option value="$PROJECT_DIR$/BitCoinGame/Domain/BinaryOptionGame.cs" />
+        <option value="$PROJECT_DIR$/BitCoinGame/Program.cs" />
+        <option value="$PROJECT_DIR$/BitCoinGame.Domain/Events/BidWon.cs" />
+        <option value="$PROJECT_DIR$/BitCoinGame.Domain/Events/GameCreated.cs" />
+        <option value="$PROJECT_DIR$/BitCoinGame.Domain/Events/BidLost.cs" />
+        <option value="$PROJECT_DIR$/BitCoinGame.Domain/Events/BidPlaced.cs" />
+        <option value="$PROJECT_DIR$/BitCoinGame.Domain/Events/GameLost.cs" />
+        <option value="$PROJECT_DIR$/BitCoinGame.Domain/Events/GameWon.cs" />
+        <option value="$PROJECT_DIR$/BitCoinGame.Domain/Commands/PlaceBidCommand.cs" />
+        <option value="$PROJECT_DIR$/BitCoinGame.Domain/Commands/CreateNewGameCommand.cs" />
+        <option value="$PROJECT_DIR$/BitCoinGame.Domain/BinaryOptionGame.cs" />
+        <option value="$PROJECT_DIR$/BitCoinGame.Domain/BinaryOptionDomainConfiguration.cs" />
+        <option value="$PROJECT_DIR$/BitCoinGame.Console/Program.cs" />
+        <option value="$PROJECT_DIR$/BitCoinGame.Tests.Unit/UnitTest1.cs" />
       </list>
     </option>
   </component>
@@ -205,7 +250,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="705" />
@@ -213,16 +261,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="SolutionExplorer" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -232,39 +270,34 @@
           <expand>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="BitCoinGame (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="BitCoinGame (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="BitCoinGame (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="BitCoinGame" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="BitCoinGame (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="BitCoinGame.Console" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="BitCoinGame (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="BitCoinGame" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Domain" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="BitCoinGame (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="BitCoinGame.Domain" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="BitCoinGame (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="BitCoinGame" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Domain" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="BitCoinGame (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="BitCoinGame.Domain" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Commands" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="BitCoinGame (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="BitCoinGame" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Domain" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="BitCoinGame (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="BitCoinGame.Domain" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Events" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="BitCoinGame (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="BitCoinGame" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Domain" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Exceptions" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="BitCoinGame (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="BitCoinGame.Tests.Unit" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
           </expand>
           <select />
@@ -275,6 +308,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RunDashboard">
@@ -289,7 +323,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected=".NET Project.Default">
+  <component name="RunManager">
     <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/BitCoinGame/bin/Debug/netcoreapp2.0/BitCoinGame.dll" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -299,16 +333,15 @@
         <env name="ASPNETCORE_ENVIRONMENT" value="Production" />
         <env name="ASPNETCORE_URLS" value="http://localhost:5000" />
       </envs>
-      <option name="USE_MONO" value="0" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/BitCoinGame/BitCoinGame.csproj" />
-      <option name="PROJECT_OUTPUT_TRACKING" value="1" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="DotNetCore" />
       <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.0" />
     </configuration>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -321,11 +354,12 @@
       <workItem from="1510176250466" duration="453000" />
       <workItem from="1514426004867" duration="1091000" />
       <workItem from="1516806604722" duration="2643000" />
+      <workItem from="1532183241259" duration="2981000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13080000" />
+    <option name="totallyTimeSpent" value="16061000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -337,30 +371,33 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="705" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1442623" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26817447" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3990228" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Change Signature" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.1442623" />
+      <window_info anchor="bottom" id="Unit Tests" order="7" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32899022" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32899022" />
+      <window_info anchor="bottom" id="NuGet" order="7" weight="0.5791045" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26783812" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.3283582" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3990228" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Change Signature" order="7" side_tool="true" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -373,264 +410,331 @@
     <breakpoint-manager>
       <option name="time" value="1" />
     </breakpoint-manager>
-    <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/BitCoinGame/Commands/CreateNewGameCommand.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame/Direction.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame/Events/GameCreated.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame/Events/GameLost.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame/Events/GameWon.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame/Exceptions/NoActiveBidException.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame/Exceptions/NotEnoughMoneyException.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame/Commands/PlaceBidCommand.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame/BinaryOptionDomainConfiguration.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="22" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame/BinaryOptionGame.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="58" column="28" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BitCoinGame/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="33" column="72" lean-forward="false" selection-start-line="33" selection-start-column="72" selection-end-line="33" selection-end-column="72" />
-          <folding>
-            <marker date="1516806934677" expanded="false" signature="6:164" ph="..." />
-            <marker date="1516806934677" expanded="true" signature="187:428" ph="{...}" />
-            <marker date="1516806934677" expanded="true" signature="207:426" ph="{...}" />
-            <marker date="1516806934677" expanded="true" signature="253:420" ph="{...}" />
-          </folding>
+          <caret line="33" column="72" selection-start-line="33" selection-start-column="72" selection-end-line="33" selection-end-column="72" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BitCoinGame.Tests.Unit/UnitTest1.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
-          <caret line="45" column="87" lean-forward="false" selection-start-line="45" selection-start-column="87" selection-end-line="45" selection-end-column="87" />
+          <caret line="45" column="87" selection-start-line="45" selection-start-column="87" selection-end-line="45" selection-end-column="87" />
           <folding>
-            <marker date="1516806933043" expanded="false" signature="6:26" ph="..." />
-            <marker date="1516806933043" expanded="true" signature="60:2561" ph="{...}" />
-            <marker date="1516806933043" expanded="true" signature="67:750" ph="/// Bitcoin game is a stake-based game when player has initial funds  ... " />
-            <marker date="1516806933043" expanded="true" signature="784:2559" ph="{...}" />
-            <marker date="1516806933043" expanded="true" signature="898:918" ph="{...}" />
-            <marker date="1516806933043" expanded="true" signature="1036:1056" ph="{...}" />
-            <marker date="1516806933043" expanded="true" signature="1166:1186" ph="{...}" />
-            <marker date="1516806933043" expanded="true" signature="1291:1311" ph="{...}" />
-            <marker date="1516806933043" expanded="true" signature="1448:1481" ph="{...}" />
-            <marker date="1516806933043" expanded="true" signature="1626:1659" ph="{...}" />
-            <marker date="1516806933043" expanded="true" signature="1784:1817" ph="{...}" />
-            <marker date="1516806933043" expanded="true" signature="1951:1984" ph="{...}" />
-            <marker date="1516806933043" expanded="true" signature="1993:2553" ph="/* Player can bid on bitcoin price raise or lower with amount of money ... */" />
+            <marker date="1532189765911" expanded="false" signature="6:26" ph="..." />
+            <marker date="1532189765911" expanded="true" signature="60:1994" ph="{...}" />
+            <marker date="1532189765911" expanded="true" signature="67:751" ph="/// Bitcoin game is a stake-based game when player has initial funds  ... " />
+            <marker date="1532189765911" expanded="true" signature="785:1992" ph="{...}" />
+            <marker date="1532189765911" expanded="true" signature="899:920" ph="{...}" />
+            <marker date="1532189765911" expanded="true" signature="1038:1058" ph="{...}" />
+            <marker date="1532189765911" expanded="true" signature="1168:1188" ph="{...}" />
+            <marker date="1532189765911" expanded="true" signature="1293:1313" ph="{...}" />
+            <marker date="1532189765911" expanded="true" signature="1450:1483" ph="{...}" />
+            <marker date="1532189765911" expanded="true" signature="1628:1661" ph="{...}" />
+            <marker date="1532189765911" expanded="true" signature="1786:1819" ph="{...}" />
+            <marker date="1532189765911" expanded="true" signature="1953:1986" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BitCoinGame/Program.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame/Program.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame/Exceptions/BidAlreadyPlacedException.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame/Events/BidLost.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame/Events/BidPlaced.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame/Events/BidWon.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame/Exceptions/CannotBidOnEndedGameException.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame/Commands/CreateNewGameCommand.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame/Direction.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame/Events/GameCreated.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame/Events/GameLost.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame/Events/GameWon.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame/Exceptions/NoActiveBidException.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame/Exceptions/NotEnoughMoneyException.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame/Commands/PlaceBidCommand.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame/BinaryOptionGame.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="600">
+          <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame/BitCoinGame.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame/BitCoinUsdPriceProvider.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame/BinaryOptionDomainConfiguration.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame/ConsoleUI.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame/IPriceProvider.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame.Domain/Events/BidLost.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
           <folding>
-            <marker date="1516806934677" expanded="false" signature="6:164" ph="..." />
-            <marker date="1516806934677" expanded="true" signature="187:428" ph="{...}" />
-            <marker date="1516806934677" expanded="true" signature="207:426" ph="{...}" />
-            <marker date="1516806934677" expanded="true" signature="253:420" ph="{...}" />
+            <marker date="1532184684652" expanded="false" signature="6:45" ph="..." />
+            <marker date="1532184684652" expanded="true" signature="68:271" ph="{...}" />
+            <marker date="1532184684652" expanded="true" signature="109:269" ph="{...}" />
+            <marker date="1532184684652" expanded="true" signature="214:263" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BitCoinGame/Program.cs">
+    <entry file="file://$PROJECT_DIR$/BitCoinGame.Domain/Events/BidPlaced.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="105">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
           <folding>
-            <marker date="1516806934677" expanded="false" signature="6:164" ph="..." />
-            <marker date="1516806934677" expanded="true" signature="187:428" ph="{...}" />
-            <marker date="1516806934677" expanded="true" signature="207:426" ph="{...}" />
-            <marker date="1516806934677" expanded="true" signature="253:420" ph="{...}" />
+            <marker date="1532184684739" expanded="false" signature="6:45" ph="..." />
+            <marker date="1532184684739" expanded="true" signature="68:447" ph="{...}" />
+            <marker date="1532184684739" expanded="true" signature="111:445" ph="{...}" />
+            <marker date="1532184684739" expanded="true" signature="332:439" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame.Domain/Events/BidWon.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="47" lean-forward="true" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+          <folding>
+            <marker date="1532184684756" expanded="false" signature="6:45" ph="..." />
+            <marker date="1532184684756" expanded="true" signature="68:269" ph="{...}" />
+            <marker date="1532184684756" expanded="true" signature="108:267" ph="{...}" />
+            <marker date="1532184684756" expanded="true" signature="212:261" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame.Domain/Events/GameCreated.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <folding>
+            <marker date="1532184684682" expanded="false" signature="6:45" ph="..." />
+            <marker date="1532184684682" expanded="true" signature="68:340" ph="{...}" />
+            <marker date="1532184684682" expanded="true" signature="113:338" ph="{...}" />
+            <marker date="1532184684682" expanded="true" signature="269:332" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame.Domain/Events/GameLost.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <folding>
+            <marker date="1532184684726" expanded="false" signature="6:45" ph="..." />
+            <marker date="1532184684726" expanded="true" signature="68:188" ph="{...}" />
+            <marker date="1532184684726" expanded="true" signature="110:186" ph="{...}" />
+            <marker date="1532184684726" expanded="true" signature="160:180" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame.Domain/Events/GameWon.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding>
+            <marker date="1532184684666" expanded="false" signature="6:45" ph="..." />
+            <marker date="1532184684666" expanded="true" signature="68:186" ph="{...}" />
+            <marker date="1532184684666" expanded="true" signature="109:184" ph="{...}" />
+            <marker date="1532184684666" expanded="true" signature="158:178" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame.Domain/Commands/PlaceBidCommand.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="72" lean-forward="true" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
+          <folding>
+            <marker date="1532189581546" expanded="true" signature="6:36" ph="..." />
+            <marker date="1532189581546" expanded="true" signature="59:400" ph="{...}" />
+            <marker date="1532189581546" expanded="true" signature="122:398" ph="{...}" />
+            <marker date="1532189581546" expanded="true" signature="308:392" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame.Domain/Commands/CreateNewGameCommand.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="106" lean-forward="true" selection-start-line="16" selection-start-column="106" selection-end-line="16" selection-end-column="106" />
+          <folding>
+            <marker date="1532189581571" expanded="true" signature="6:36" ph="..." />
+            <marker date="1532189581571" expanded="true" signature="59:427" ph="{...}" />
+            <marker date="1532189581571" expanded="true" signature="127:425" ph="{...}" />
+            <marker date="1532189581571" expanded="true" signature="325:419" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame.Domain/BinaryOptionGame.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="24" column="87" lean-forward="true" selection-start-line="24" selection-start-column="87" selection-end-line="24" selection-end-column="87" />
+          <folding>
+            <marker date="1532189104407" expanded="false" signature="6:75" ph="..." />
+            <marker date="1532189104407" expanded="true" signature="98:3936" ph="{...}" />
+            <marker date="1532189104407" expanded="true" signature="156:3934" ph="{...}" />
+            <marker date="1532189104407" expanded="true" signature="519:1218" ph="{...}" />
+            <marker date="1532189104407" expanded="true" signature="633:772" ph="{...}" />
+            <marker date="1532189104407" expanded="true" signature="1018:1208" ph="{...}" />
+            <marker date="1532189104407" expanded="true" signature="1307:2609" ph="{...}" />
+            <marker date="1532189104407" expanded="true" signature="1353:1696" ph="{...}" />
+            <marker date="1532189104407" expanded="true" signature="1732:1889" ph="{...}" />
+            <marker date="1532189104407" expanded="true" signature="2039:2194" ph="{...}" />
+            <marker date="1532189104407" expanded="true" signature="2228:2378" ph="{...}" />
+            <marker date="1532189104407" expanded="true" signature="2747:2831" ph="{...}" />
+            <marker date="1532189104407" expanded="true" signature="2927:3306" ph="{...}" />
+            <marker date="1532189104407" expanded="true" signature="3373:3927" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame.Domain/BitCoinGame.Domain.csproj">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame.Domain/BinaryOptionDomainConfiguration.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="90" lean-forward="true" selection-start-line="24" selection-start-column="90" selection-end-line="24" selection-end-column="90" />
+          <folding>
+            <marker date="1532189581555" expanded="true" signature="6:63" ph="..." />
+            <marker date="1532189581555" expanded="true" signature="86:888" ph="{...}" />
+            <marker date="1532189581555" expanded="true" signature="153:886" ph="{...}" />
+            <marker date="1532189581555" expanded="true" signature="221:463" ph="{...}" />
+            <marker date="1532189581555" expanded="true" signature="550:880" ph="{...}" />
+            <marker date="1532189581555" expanded="true" signature="631:870" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitCoinGame.Console/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding>
+            <marker date="1532189581564" expanded="true" signature="44:291" ph="{...}" />
+            <marker date="1532189581564" expanded="true" signature="64:289" ph="{...}" />
+            <marker date="1532189581564" expanded="true" signature="110:283" ph="{...}" />
+            <marker date="1532189581564" expanded="true" signature="131:214" ph="/* var node = new GridDomainNode(() =&gt; ActorSystem.Create(&quot;test&quot;)); ... */" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BitCoinGame.Tests.Unit/UnitTest1.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27">
-          <caret line="18" column="40" lean-forward="false" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+        <state relative-caret-position="420">
+          <caret line="29" column="12" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
           <folding>
-            <marker date="1516806933043" expanded="false" signature="6:26" ph="..." />
-            <marker date="1516806933043" expanded="true" signature="60:2561" ph="{...}" />
-            <marker date="1516806933043" expanded="true" signature="67:750" ph="/// Bitcoin game is a stake-based game when player has initial funds  ... " />
-            <marker date="1516806933043" expanded="true" signature="784:2559" ph="{...}" />
-            <marker date="1516806933043" expanded="true" signature="898:918" ph="{...}" />
-            <marker date="1516806933043" expanded="true" signature="1036:1056" ph="{...}" />
-            <marker date="1516806933043" expanded="true" signature="1166:1186" ph="{...}" />
-            <marker date="1516806933043" expanded="true" signature="1291:1311" ph="{...}" />
-            <marker date="1516806933043" expanded="true" signature="1448:1481" ph="{...}" />
-            <marker date="1516806933043" expanded="true" signature="1626:1659" ph="{...}" />
-            <marker date="1516806933043" expanded="true" signature="1784:1817" ph="{...}" />
-            <marker date="1516806933043" expanded="true" signature="1951:1984" ph="{...}" />
-            <marker date="1516806933043" expanded="true" signature="1993:2553" ph="/* Player can bid on bitcoin price raise or lower with amount of money ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BitCoinGame/Program.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-          <folding>
-            <marker date="1516806934677" expanded="false" signature="6:164" ph="..." />
-            <marker date="1516806934677" expanded="true" signature="187:428" ph="{...}" />
-            <marker date="1516806934677" expanded="true" signature="207:426" ph="{...}" />
-            <marker date="1516806934677" expanded="true" signature="253:420" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BitCoinGame/Domain/Exceptions/BidAlreadyPlacedException.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1516806987736" expanded="true" signature="36:107" ph="{...}" />
-            <marker date="1516806987736" expanded="true" signature="93:105" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BitCoinGame/Domain/Events/BidLost.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1516807000548" expanded="false" signature="6:45" ph="..." />
-            <marker date="1516807000548" expanded="true" signature="68:269" ph="{...}" />
-            <marker date="1516807000548" expanded="true" signature="109:267" ph="{...}" />
-            <marker date="1516807000548" expanded="true" signature="212:261" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BitCoinGame/Domain/Events/BidPlaced.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1516807000757" expanded="false" signature="6:45" ph="..." />
-            <marker date="1516807000757" expanded="true" signature="68:445" ph="{...}" />
-            <marker date="1516807000757" expanded="true" signature="111:443" ph="{...}" />
-            <marker date="1516807000757" expanded="true" signature="330:437" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BitCoinGame/Domain/Events/BidWon.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BitCoinGame/Domain/Exceptions/CannotBidOnEndedGameException.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BitCoinGame/Domain/Commands/CreateNewGameCommand.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BitCoinGame/Domain/Direction.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1516806919410" expanded="true" signature="21:88" ph="{...}" />
-            <marker date="1516806919410" expanded="true" signature="49:86" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BitCoinGame/Domain/Events/GameCreated.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BitCoinGame/Domain/Events/GameLost.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BitCoinGame/Domain/Events/GameWon.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BitCoinGame/Domain/Exceptions/NoActiveBidException.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BitCoinGame/Domain/Exceptions/NotEnoughMoneyException.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BitCoinGame/Domain/Commands/PlaceBidCommand.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1516806919996" expanded="false" signature="6:36" ph="..." />
-            <marker date="1516806919996" expanded="true" signature="59:380" ph="{...}" />
-            <marker date="1516806919996" expanded="true" signature="104:378" ph="{...}" />
-            <marker date="1516806919996" expanded="true" signature="288:372" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BitCoinGame/BinaryOptionDomainConfiguration.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="2" lean-forward="false" selection-start-line="15" selection-start-column="2" selection-end-line="22" selection-end-column="9" />
-          <folding>
-            <marker date="1516808543539" expanded="false" signature="6:63" ph="..." />
-            <marker date="1516808543539" expanded="true" signature="86:882" ph="{...}" />
-            <marker date="1516808543539" expanded="true" signature="153:880" ph="{...}" />
-            <marker date="1516808543539" expanded="true" signature="221:457" ph="{...}" />
-            <marker date="1516808543539" expanded="true" signature="544:874" ph="{...}" />
-            <marker date="1516808543539" expanded="true" signature="625:864" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BitCoinGame/Domain/BinaryOptionGame.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="58" column="28" lean-forward="false" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
-          <folding>
-            <marker date="1516809508811" expanded="false" signature="6:75" ph="..." />
-            <marker date="1516809508811" expanded="true" signature="98:3954" ph="{...}" />
-            <marker date="1516809508811" expanded="true" signature="156:3952" ph="{...}" />
-            <marker date="1516809508811" expanded="true" signature="519:1218" ph="{...}" />
-            <marker date="1516809508811" expanded="true" signature="633:772" ph="{...}" />
-            <marker date="1516809508811" expanded="true" signature="1018:1208" ph="{...}" />
-            <marker date="1516809508811" expanded="true" signature="1305:2607" ph="{...}" />
-            <marker date="1516809508811" expanded="true" signature="1351:1694" ph="{...}" />
-            <marker date="1516809508811" expanded="true" signature="1730:1887" ph="{...}" />
-            <marker date="1516809508811" expanded="true" signature="2037:2192" ph="{...}" />
-            <marker date="1516809508811" expanded="true" signature="2226:2376" ph="{...}" />
-            <marker date="1516809508811" expanded="false" signature="2743:2830" ph="{...}" />
-            <marker date="1516809508811" expanded="false" signature="2927:3309" ph="{...}" />
-            <marker date="1516809508811" expanded="false" signature="3376:3945" ph="{...}" />
+            <marker date="1532189765911" expanded="false" signature="6:26" ph="..." />
+            <marker date="1532189765911" expanded="true" signature="60:1994" ph="{...}" />
+            <marker date="1532189765911" expanded="true" signature="67:751" ph="/// Bitcoin game is a stake-based game when player has initial funds  ... " />
+            <marker date="1532189765911" expanded="true" signature="785:1992" ph="{...}" />
+            <marker date="1532189765911" expanded="true" signature="899:920" ph="{...}" />
+            <marker date="1532189765911" expanded="true" signature="1038:1058" ph="{...}" />
+            <marker date="1532189765911" expanded="true" signature="1168:1188" ph="{...}" />
+            <marker date="1532189765911" expanded="true" signature="1293:1313" ph="{...}" />
+            <marker date="1532189765911" expanded="true" signature="1450:1483" ph="{...}" />
+            <marker date="1532189765911" expanded="true" signature="1628:1661" ph="{...}" />
+            <marker date="1532189765911" expanded="true" signature="1786:1819" ph="{...}" />
+            <marker date="1532189765911" expanded="true" signature="1953:1986" ph="{...}" />
           </folding>
         </state>
       </provider>

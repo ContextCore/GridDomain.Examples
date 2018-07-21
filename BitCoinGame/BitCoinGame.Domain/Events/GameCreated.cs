@@ -7,7 +7,7 @@ namespace BitCoinGame
     {
         public decimal InitialAmount { get; }
 
-        public GameCreated(Guid sourceId, decimal initialAmount, decimal winAmount) : base(sourceId)
+        public GameCreated(string sourceId, decimal initialAmount, decimal winAmount) : base(sourceId)
         {
             InitialAmount = initialAmount;
         }

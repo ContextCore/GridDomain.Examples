@@ -34,7 +34,7 @@ namespace BitCoinGame
             }
         }
         
-        private BinaryOptionGame(Guid id, IPriceProvider provider) : base(id)
+        private BinaryOptionGame(string id, IPriceProvider provider) : base(id)
         {
             Apply<GameCreated>(e =>
                                {
@@ -65,12 +65,12 @@ namespace BitCoinGame
             Execute<PlaceBidCommand>(c => PlaceBid(c.Direction,c.Amount,provider));
         }
 
-        public BinaryOptionGame(Guid gameId, decimal initialAmount, decimal winAmount, IPriceProvider provider):this(gameId, provider)
+        public BinaryOptionGame(string gameId, decimal initialAmount, decimal winAmount, IPriceProvider provider):this(gameId, provider)
         {
-            Produce(new GameCreated(Id,initialAmount, winAmount));
+            Emit(new GameCreated(Id,initialAmount, winAmount));
         }
 
-        private async Task PlaceBid(Direction dir, decimal amount,IPriceProvider priceProvider)
+        public async Task PlaceBid(Direction dir, decimal amount,IPriceProvider priceProvider)
         {
             if (IsEnded)
                 throw new CannotBidOnEndedGameException();
@@ -79,7 +79,7 @@ namespace BitCoinGame
             if (CurrentBid != null)
                 throw new BidAlreadyPlacedException();
             
-            Produce(new BidPlaced(Id,dir,amount, await priceProvider.GetPrice()));
+            Emit(new BidPlaced(Id,dir,amount, await priceProvider.GetPrice()));
         }
 
         private async Task CheckBid(IPriceProvider priceProvider)
@@ -89,14 +89,14 @@ namespace BitCoinGame
             if (CurrentBid == null)
                 throw new NoActiveBidException();
             if (CurrentBid.IsWon(await priceProvider.GetPrice()))
-                Produce(new BidWon(Id, CurrentBid.Amount));
+                Emit(new BidWon(Id, CurrentBid.Amount));
             else
-                await Emit(new BidLost(Id, CurrentBid.Amount));
+                Emit(new BidLost(Id, CurrentBid.Amount));
             
             if(TotalAmount <=0)
-                Produce(new GameLost(Id));
+                Emit(new GameLost(Id));
             if (TotalAmount >= WinAmount)
-                Produce(new GameWon(Id));
+                Emit(new GameWon(Id));
         }
 
     }

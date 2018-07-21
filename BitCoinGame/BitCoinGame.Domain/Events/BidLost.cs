@@ -7,7 +7,7 @@ namespace BitCoinGame
     {
         public decimal Amount { get; }
 
-        public BidLost(Guid id, decimal amount):base(id)
+        public BidLost(string id, decimal amount):base(id)
         {
             Amount = amount;
         }

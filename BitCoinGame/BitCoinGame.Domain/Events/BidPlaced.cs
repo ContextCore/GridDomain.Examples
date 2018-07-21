@@ -9,7 +9,7 @@ namespace BitCoinGame
         public decimal Amount { get; }
         public decimal BaseLevel { get; }
 
-        public BidPlaced(Guid id, Direction dir, decimal amount, decimal baseLevel):base(id)
+        public BidPlaced(string id, Direction dir, decimal amount, decimal baseLevel):base(id)
         {
             Dir = dir;
             Amount = amount;

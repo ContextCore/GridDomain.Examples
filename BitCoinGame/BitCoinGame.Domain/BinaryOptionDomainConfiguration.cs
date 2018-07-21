@@ -10,7 +10,7 @@ namespace BitCoinGame
         {
             var provider = new BitCoinUsdPriceProvider();    
             builder.RegisterAggregate(
-               new DefaultAggregateDependencyFactory<BinaryOptionGame>(new BinaryOptionCommandHandler(provider)));
+               new DefaultAggregateDependencyFactory<BinaryOptionGame>(() => new BinaryOptionCommandHandler(provider)));
         }
 
         class BinaryOptionCommandHandler : AggregateCommandsHandler<BinaryOptionGame>
