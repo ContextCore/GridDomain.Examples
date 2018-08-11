@@ -6,6 +6,7 @@ namespace BitCoinGame
 {
     public class BinaryOptionGame : ConventionAggregate
     {
+
         //Persisted state
         public decimal TotalAmount { get; private set; }
         public decimal WinAmount { get; private set; }
@@ -34,7 +35,7 @@ namespace BitCoinGame
             }
         }
         
-        private BinaryOptionGame(string id, IPriceProvider provider) : base(id)
+        internal BinaryOptionGame(string id, IPriceProvider provider) : base(id)
         {
             Apply<GameCreated>(e =>
                                {
@@ -47,9 +48,10 @@ namespace BitCoinGame
             Apply<BidPlaced>(e =>
                              {
                                  CurrentBid = new Bid(e.Dir, e.Amount, e.BaseLevel, provider);
+                                 TotalAmount -= e.Amount;
                              });
-            Apply<BidWon>(e => TotalAmount += e.Amount);
-            Apply<BidLost>(e => TotalAmount -= e.Amount);
+            Apply<BidWon>(e => TotalAmount += (e.Amount + CurrentBid.Amount));
+            Apply<BidLost>(e => {});
             Apply<GameLost>(e =>
                             {
                                 IsEnded = true;
@@ -62,7 +64,7 @@ namespace BitCoinGame
                            });
             
             Execute<CreateNewGameCommand>(c => new BinaryOptionGame(c.AggregateId, c.StartAmount,c.WinAmount, provider));
-            Execute<PlaceBidCommand>(c => PlaceBid(c.Direction,c.Amount,provider));
+            Execute<PlaceBidCommand>(async c => await PlaceBid(c.Direction,c.Amount,provider));
         }
 
         public BinaryOptionGame(string gameId, decimal initialAmount, decimal winAmount, IPriceProvider provider):this(gameId, provider)
@@ -98,6 +100,5 @@ namespace BitCoinGame
             if (TotalAmount >= WinAmount)
                 Emit(new GameWon(Id));
         }
-
     }
 }

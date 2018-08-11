@@ -1,9 +1,11 @@
 ﻿using System;
+using GridDomain.Common;
+using GridDomain.CQRS;
 using GridDomain.EventSourcing;
 
 namespace BitCoinGame
 {
-    public class GameCreated : DomainEvent
+    public class GameCreated : DomainEvent,IFor<BinaryOptionGame>
     {
         public decimal InitialAmount { get; }
 
