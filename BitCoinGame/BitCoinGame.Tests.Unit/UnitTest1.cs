@@ -30,24 +30,24 @@ namespace BitCoinGame.Tests.Unit
         }
     }
 
-    public class NodeBitcoinGateTests : BitCoinGameTests
+    public class NodeBitcoinGameTests : BitCoinGameTests
     {
-        public NodeBitcoinGateTests(ITestOutputHelper output) : base(output)
+        public NodeBitcoinGameTests(ITestOutputHelper output) : base(output)
         {
         }
 
         protected override async Task<IAggregateScenarioRun<BinaryOptionGame>> Run(IAggregateScenario scenario)
         {
             return await scenario.Run()
-                                 .Node<BinaryOptionGame>(new BinaryOptionDomainConfiguration(), Logger);
+                                 .Node<BinaryOptionGame>(new BinaryOptionDomainConfiguration(PriceProviderMock.Object), Logger);
         }
     }
 
-    public class ClusterBitcoinGateTests : BitCoinGameTests
+    public class ClusterBitcoinGameTests : BitCoinGameTests
     {
         private ITestOutputHelper _output;
 
-        public ClusterBitcoinGateTests(ITestOutputHelper output) : base(output)
+        public ClusterBitcoinGameTests(ITestOutputHelper output) : base(output)
         {
             _output = output;
         }
@@ -55,7 +55,7 @@ namespace BitCoinGame.Tests.Unit
         protected override async Task<IAggregateScenarioRun<BinaryOptionGame>> Run(IAggregateScenario scenario)
         {
             return await scenario.Run()
-                                 .Cluster<BinaryOptionGame>(new BinaryOptionDomainConfiguration(),
+                                 .Cluster<BinaryOptionGame>(new BinaryOptionDomainConfiguration(PriceProviderMock.Object),
                                                             () => new LoggerConfiguration()
                                                                   .WriteTo.XunitTestOutput(_output),
                                                             2,

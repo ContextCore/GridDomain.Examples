@@ -7,18 +7,30 @@ namespace BitCoinGame
 {
     public class BinaryOptionDomainConfiguration : IDomainConfiguration
     {
-        
+        private readonly IPriceProvider _priceProvider;
+
+        public BinaryOptionDomainConfiguration(IPriceProvider priceProvider)
+        {
+            _priceProvider = priceProvider;
+        }
         public void Register(IDomainBuilder builder)
         {
-            var provider = new BitCoinUsdPriceProvider();    
-            builder.RegisterAggregate(DefaultAggregateDependencyFactory.ForCommandAggregate<BinaryOptionGame>(new BinaryOptionAggregateFactory(provider)));
+            var aggregateFactory = new BinaryOptionAggregateFactory(_priceProvider);
+            var handler = CommandAggregateHandler.New<BinaryOptionGame>(aggregateFactory);
+
+            var dependencyFactory = new DefaultAggregateDependencyFactory<BinaryOptionGame>(() => handler)
+                                    {
+                                        AggregateFactoryCreator = () => aggregateFactory
+                                    };
+
+            builder.RegisterAggregate(dependencyFactory);
         }
 
     }
 
     public class BinaryOptionAggregateFactory : IConstructAggregates
     {
-        private IPriceProvider _provider;
+        private readonly IPriceProvider _provider;
 
         public BinaryOptionAggregateFactory(IPriceProvider provider)
         {
