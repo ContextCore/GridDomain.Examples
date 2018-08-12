@@ -8,10 +8,12 @@ namespace BitCoinGame
     public class GameCreated : DomainEvent,IFor<BinaryOptionGame>
     {
         public decimal InitialAmount { get; }
+        public decimal WinAmount { get; }
 
         public GameCreated(string sourceId, decimal initialAmount, decimal winAmount) : base(sourceId)
         {
             InitialAmount = initialAmount;
+            WinAmount = winAmount;
         }
     }
 }

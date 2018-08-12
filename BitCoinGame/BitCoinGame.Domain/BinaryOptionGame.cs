@@ -40,7 +40,7 @@ namespace BitCoinGame
             Apply<GameCreated>(e =>
                                {
                                    TotalAmount = e.InitialAmount;
-                                   WinAmount = WinAmount;
+                                   WinAmount = e.WinAmount;
                                    IsWon = false;
                                    IsEnded = false;
                                    IsLost = false;
@@ -50,7 +50,7 @@ namespace BitCoinGame
                                  CurrentBid = new Bid(e.Dir, e.Amount, e.BaseLevel, provider);
                                  TotalAmount -= e.Amount;
                              });
-            Apply<BidWon>(e => TotalAmount += (e.Amount + CurrentBid.Amount));
+            Apply<BidWon>(e => TotalAmount += e.Amount);
             Apply<BidLost>(e => {});
             Apply<GameLost>(e =>
                             {
@@ -60,11 +60,12 @@ namespace BitCoinGame
             Apply<GameWon>(e =>
                            {
                                IsEnded = true;
-                               IsWon = true;
+                               IsWon = true; 
                            });
             
             Execute<CreateNewGameCommand>(c => new BinaryOptionGame(c.AggregateId, c.StartAmount,c.WinAmount, provider));
             Execute<PlaceBidCommand>(async c => await PlaceBid(c.Direction,c.Amount,provider));
+            Execute<CheckBidCommand>(async c => await CheckBid(provider));
         }
 
         public BinaryOptionGame(string gameId, decimal initialAmount, decimal winAmount, IPriceProvider provider):this(gameId, provider)
@@ -76,10 +77,12 @@ namespace BitCoinGame
         {
             if (IsEnded)
                 throw new CannotBidOnEndedGameException();
-            if (amount > TotalAmount)
-                throw new NotEnoughMoneyException();
+           
             if (CurrentBid != null)
                 throw new BidAlreadyPlacedException();
+
+            if (amount > TotalAmount)
+                throw new NotEnoughMoneyException();
             
             Emit(new BidPlaced(Id,dir,amount, await priceProvider.GetPrice()));
         }
@@ -87,11 +90,11 @@ namespace BitCoinGame
         private async Task CheckBid(IPriceProvider priceProvider)
         {
             if (IsEnded)
-                throw new CannotBidOnEndedGameException();
+                throw new CannotCheckBidOnEndedGameException();
             if (CurrentBid == null)
                 throw new NoActiveBidException();
             if (CurrentBid.IsWon(await priceProvider.GetPrice()))
-                Emit(new BidWon(Id, CurrentBid.Amount));
+                Emit(new BidWon(Id, CurrentBid.Amount * 2));
             else
                 Emit(new BidLost(Id, CurrentBid.Amount));
             

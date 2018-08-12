@@ -1,12 +1,12 @@
 using System;
 using System.Threading.Tasks;
+using GridDomain.EventSourcing;
+using GridDomain.Scenarios;
+using GridDomain.Scenarios.Runners;
 using GridDomain.Tests.Common;
-using GridDomain.Tests.Scenarios;
-using GridDomain.Tests.Scenarios.Runners;
 using Moq;
 using Serilog;
 using Serilog.Core;
-using Should.Fluent;
 using Xunit;
 using Xunit.Abstractions;
 
@@ -14,35 +14,26 @@ namespace BitCoinGame.Tests.Unit
 {
     public class LocalBitcoinGateTests : BitCoinGameTests
     {
-        private IPriceProvider _priceProvider;
-        private BinaryOptionCommandHandler _handler;
-        private BinaryOptionAggregateFactory _factory;
+        private readonly BinaryOptionAggregateFactory _factory;
+        private readonly IAggregateCommandsHandler<BinaryOptionGame> _handler;
 
         public LocalBitcoinGateTests(ITestOutputHelper output) : base(output)
         {
-            _priceProvider = Mock.Of<IPriceProvider>();
-            _handler = new BinaryOptionCommandHandler(_priceProvider);
-            _factory = new BinaryOptionAggregateFactory(_priceProvider);
+            _factory = new BinaryOptionAggregateFactory(PriceProviderMock.Object);
+            _handler = CommandAggregateHandler.New<BinaryOptionGame>(_factory);
         }
 
         protected override async Task<IAggregateScenarioRun<BinaryOptionGame>> Run(IAggregateScenario scenario)
         {
             return await scenario.Run()
-                                 .Local(_factory, _handler, Logger);
+                                 .Local(_factory, _handler,  Logger);
         }
     }
 
     public class NodeBitcoinGateTests : BitCoinGameTests
     {
-        private IPriceProvider _priceProvider;
-        private BinaryOptionCommandHandler _handler;
-        private BinaryOptionAggregateFactory _factory;
-
         public NodeBitcoinGateTests(ITestOutputHelper output) : base(output)
         {
-            _priceProvider = Mock.Of<IPriceProvider>();
-            _handler = new BinaryOptionCommandHandler(_priceProvider);
-            _factory = new BinaryOptionAggregateFactory(_priceProvider);
         }
 
         protected override async Task<IAggregateScenarioRun<BinaryOptionGame>> Run(IAggregateScenario scenario)
@@ -54,17 +45,11 @@ namespace BitCoinGame.Tests.Unit
 
     public class ClusterBitcoinGateTests : BitCoinGameTests
     {
-        private IPriceProvider _priceProvider;
-        private BinaryOptionCommandHandler _handler;
-        private BinaryOptionAggregateFactory _factory;
         private ITestOutputHelper _output;
 
         public ClusterBitcoinGateTests(ITestOutputHelper output) : base(output)
         {
             _output = output;
-            _priceProvider = Mock.Of<IPriceProvider>();
-            _handler = new BinaryOptionCommandHandler(_priceProvider);
-            _factory = new BinaryOptionAggregateFactory(_priceProvider);
         }
 
         protected override async Task<IAggregateScenarioRun<BinaryOptionGame>> Run(IAggregateScenario scenario)
@@ -99,10 +84,11 @@ namespace BitCoinGame.Tests.Unit
     public abstract class BitCoinGameTests
     {
         protected readonly Logger Logger;
-
+        protected Mock<IPriceProvider> PriceProviderMock { get; }
         protected BitCoinGameTests(ITestOutputHelper output)
         {
             Logger = new LoggerConfiguration().WriteTo.XunitTestOutput(output).CreateLogger();
+            PriceProviderMock = new Mock<IPriceProvider>();
         }
 
         protected abstract Task<IAggregateScenarioRun<BinaryOptionGame>> Run(IAggregateScenario scenario);
@@ -146,43 +132,167 @@ namespace BitCoinGame.Tests.Unit
                                                    .When(new PlaceBidCommand("a", Direction.Up, 20))
                                                    .Build();
 
-            await Check(scenario).ShouldThrow<NotEnoughMoneyException>();
+           await  Run(scenario).ShouldThrow<NotEnoughMoneyException>();
         }
 
         [Fact]
-        public void Given_Game_When_dib_won_And_total_funds_greater_target_Then_game_is_won()
+        public async Task Given_Game_When_dib_won_And_total_funds_greater_target_Then_game_is_won()
         {
-            throw new NotImplementedException();
+            var scenario = AggregateScenarioBuilder.New()
+                                                   .Given(new GameCreated("a", 10, 15),
+                                                          new BidPlaced("a",Direction.Down, 10, 1000))
+                                                   .When(new CheckBidCommand("a"))
+                                                   .Then(new BidWon("a",20),
+                                                         new GameWon("a"))
+                                                   .Build();
+
+            await Run(scenario).Check();
         }
 
         [Fact]
-        public void Given_Game_When_dib_lost_And_total_funds_are_zero_Then_game_is_lost()
+        public async Task Given_Game_When_bid_lost_And_total_funds_are_zero_Then_game_is_lost()
         {
-            throw new NotImplementedException();
+            var scenario = AggregateScenarioBuilder.New()
+                                                   .Given(new GameCreated("a", 10, 15),
+                                                          new BidPlaced("a",Direction.Up, 10, 1000))
+                                                   .When(new CheckBidCommand("a"))
+                                                   .Then(new BidLost("a",10),
+                                                         new GameLost("a"))
+                                                   .Build();
+
+            await Run(scenario).Check();
         }
 
         [Fact]
-        public void Given_game_with_active_bid_for_raise_When_bid_is_checked_And_won_Then_double_bid_returned_to_funds()
+        public async Task Given_game_with_active_bid_for_raise_When_bid_is_checked_And_won_Then_double_bid_returned_to_funds()
         {
-            throw new NotImplementedException();
+            PriceProviderMock.Setup(m => m.GetPrice()).Returns(Task.FromResult(2000M));
+
+            var scenario = AggregateScenarioBuilder.New()
+                                                   .Given(new GameCreated("a", 10, 35),
+                                                          new BidPlaced("a",Direction.Up, 10, 1000))
+                                                   .When(new CheckBidCommand("a"))
+                                                   .Then(new BidWon("a",20))
+                                                   .Build();
+
+            var run = await Run(scenario);
+            Assert.Equal(20, run.Aggregate.TotalAmount);
         }
 
         [Fact]
-        public void Given_game_with_active_bid_for_lower_When_bid_is_checked_And_won_Then_double_bid_returned_to_funds()
+        public async Task Given_game_with_active_bid_for_lower_When_bid_is_checked_And_won_Then_double_bid_returned_to_funds()
         {
-            throw new NotImplementedException();
+            var scenario = AggregateScenarioBuilder.New()
+                                                   .Given(new GameCreated("a", 10, 35),
+                                                          new BidPlaced("a",Direction.Down, 10, 1000))
+                                                   .When(new CheckBidCommand("a"))
+                                                   .Then(new BidWon("a",20))
+                                                   .Build();
+
+            var run = await Run(scenario);
+            Assert.Equal(20, run.Aggregate.TotalAmount);
         }
 
         [Fact]
-        public void Given_game_with_active_bid_for_lower_When_bid_is_checked_And_lst_Then_funds_not_changed()
+        public async Task Given_game_with_active_bid_for_lower_When_bid_is_checked_And_lost_Then_it_is_not_returned_to_funds()
         {
-            throw new NotImplementedException();
+            PriceProviderMock.Setup(m => m.GetPrice()).Returns(Task.FromResult(1500M));
+            var scenario = AggregateScenarioBuilder.New()
+                                                   .Given(new GameCreated("a", 10, 35),
+                                                          new BidPlaced("a",Direction.Down, 4, 1000))
+                                                   .When(new CheckBidCommand("a"))
+                                                   .Then(new BidLost("a",10))
+                                                   .Build();
+
+            var run = await Run(scenario);
+            Assert.Equal(6, run.Aggregate.TotalAmount);
         }
 
         [Fact]
-        public void Given_game_with_active_bid_for_raise_When_bid_is_checked_And_lst_Then_funds_not_changed()
+        public async Task Given_game_with_active_bid_for_raise_When_bid_is_checked_And_lost_Then_it_is_not_returned_to_funds()
         {
-            throw new NotImplementedException();
+            PriceProviderMock.Setup(m => m.GetPrice()).Returns(Task.FromResult(500M));
+            var scenario = AggregateScenarioBuilder.New()
+                                                   .Given(new GameCreated("a", 10, 35),
+                                                          new BidPlaced("a",Direction.Up, 4, 1000))
+                                                   .When(new CheckBidCommand("a"))
+                                                   .Then(new BidLost("a",10))
+                                                   .Build();
+
+            var run = await Run(scenario);
+            Assert.Equal(6, run.Aggregate.TotalAmount);
+        }
+
+        [Fact]
+        public async Task Given_lost_game_When_placing_new_bid_Then_error_occures()
+        {
+            var scenario = AggregateScenarioBuilder.New()
+                                                   .Given(new GameCreated("a", 10, 35),
+                                                          new GameLost("a"))
+                                                   .When(new PlaceBidCommand("a",Direction.Down,5))
+                                                   .Build();
+
+           await Run(scenario).ShouldThrow<CannotBidOnEndedGameException>();
+        }
+
+        [Fact]
+        public async Task Given_lost_game_When_checking_a_bid_Then_error_occur()
+        {
+            var scenario = AggregateScenarioBuilder.New()
+                                                   .Given(new GameCreated("a", 10, 35),
+                                                          new GameLost("a"))
+                                                   .When(new CheckBidCommand("a"))
+                                                   .Build();
+
+            await Run(scenario).ShouldThrow<CannotCheckBidOnEndedGameException>();
+        }
+
+        [Fact]
+        public async Task Given_won_game_When_checking_a_bid_Then_error_occur()
+        {
+            var scenario = AggregateScenarioBuilder.New()
+                                                   .Given(new GameCreated("a", 10, 35),
+                                                          new GameWon("a"))
+                                                   .When(new CheckBidCommand("a"))
+                                                   .Build();
+
+            await Run(scenario).ShouldThrow<CannotCheckBidOnEndedGameException>();
+        }
+
+        [Fact]
+        public async Task Given_active_game_without_a_bid_When_checking_a_bid_Then_error_occur()
+        {
+            var scenario = AggregateScenarioBuilder.New()
+                                                   .Given(new GameCreated("a", 10, 35))
+                                                   .When(new CheckBidCommand("a"))
+                                                   .Build();
+
+            await Run(scenario).ShouldThrow<NoActiveBidException>();
+        }
+
+        [Fact]
+        public async Task Given_active_game_with_a_bid_When_placing_a_new_bid_Then_error_occur()
+        {
+            var scenario = AggregateScenarioBuilder.New()
+                                                   .Given(new GameCreated("a", 10, 35),
+                                                          new BidPlaced("a", Direction.Down, 10, 1000))
+                                                   .When(new PlaceBidCommand("a",Direction.Up, 12))
+                                                   .Build();
+
+            await Run(scenario).ShouldThrow<BidAlreadyPlacedException>();
+        }
+
+
+        [Fact]
+        public async Task Given_won_game_When_placing_new_bid_Then_error_occur()
+        {
+            var scenario = AggregateScenarioBuilder.New()
+                                                   .Given(new GameCreated("a", 10, 35),
+                                                          new GameWon("a"))
+                                                   .When(new PlaceBidCommand("a",Direction.Down,5))
+                                                   .Build();
+
+            await Run(scenario).ShouldThrow<CannotBidOnEndedGameException>();
         }
     }
 }

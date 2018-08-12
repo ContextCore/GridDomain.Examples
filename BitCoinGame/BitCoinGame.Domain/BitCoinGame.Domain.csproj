@@ -4,7 +4,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="BlockchainAPI" Version="4.0.0" />
-    <PackageReference Include="GridDomain.Configuration" Version="2.3.0-alpha-1112" />
-    <PackageReference Include="GridDomain.EventSourcing" Version="2.3.0-alpha-1112" />
+    <PackageReference Include="GridDomain.Configuration" Version="2.3.0-alpha-1115" />
+    <PackageReference Include="GridDomain.EventSourcing" Version="2.3.0-alpha-1115" />
   </ItemGroup>
 </Project>
