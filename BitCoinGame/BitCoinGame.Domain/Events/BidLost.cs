@@ -3,7 +3,7 @@ using GridDomain.EventSourcing;
 
 namespace BitCoinGame
 {
-    public class BidLost : DomainEvent
+    public class BidLost : DomainEvent<BinaryOptionGame>
     {
         public decimal Amount { get; }
 

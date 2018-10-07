@@ -63,7 +63,7 @@ namespace BitCoinGame
                                IsWon = true; 
                            });
             
-            Execute<CreateNewGameCommand>(c => new BinaryOptionGame(c.AggregateId, c.StartAmount,c.WinAmount, provider));
+            Execute<CreateNewGameCommand>(c => Emit(new GameCreated(c.AggregateId, c.StartAmount,c.WinAmount)));
             Execute<PlaceBidCommand>(async c => await PlaceBid(c.Direction,c.Amount,provider));
             Execute<CheckBidCommand>(async c => await CheckBid(provider));
         }

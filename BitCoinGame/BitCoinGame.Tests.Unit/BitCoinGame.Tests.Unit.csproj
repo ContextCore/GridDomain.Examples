@@ -7,9 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="GridDomain.Configuration" Version="2.3.0-alpha-1115" />
-    <PackageReference Include="GridDomain.EventSourcing" Version="2.3.0-alpha-1115" />
-    <PackageReference Include="GridDomain.Scenarios" Version="2.3.0-alpha-1115" />
+    <PackageReference Include="GridDomain.Configuration" Version="2.4.0-alpha-1124" />
+    <PackageReference Include="GridDomain.EventSourcing" Version="2.4.0-alpha-1124" />
+    <PackageReference Include="GridDomain.Scenarios" Version="2.4.0-alpha-1124" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0-preview-20170628-02" />
     <PackageReference Include="Moq" Version="4.9.0" />
     <PackageReference Include="Serilog.Sinks.XunitTestOutput" Version="1.0.14" />
@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BitCoinGame.Console\BitCoinGame.Console.csproj" />
     <ProjectReference Include="..\BitCoinGame.Domain\BitCoinGame.Domain.csproj" />
   </ItemGroup>
 
